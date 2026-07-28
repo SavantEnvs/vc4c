@@ -1,0 +1,7 @@
+project: savantenvs/VC4C
+target: vc4c
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/vc4c/testsuite
+cmds:
+  - cmd: /mayhem/vc4c_target @@

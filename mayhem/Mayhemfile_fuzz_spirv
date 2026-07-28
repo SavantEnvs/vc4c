@@ -1,0 +1,8 @@
+project: savantenvs/VC4C
+target: fuzz-spirv
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz-spirv/testsuite
+cmds:
+  - cmd: /mayhem/fuzz_spirv
+    libfuzzer: true
